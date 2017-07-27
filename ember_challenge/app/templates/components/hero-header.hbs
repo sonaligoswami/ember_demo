@@ -1,0 +1,26 @@
+<div class="row banner-main">
+   <div class="col-md-8 col-sm-12 col-xs-12 text-center">
+      <div class="banner-sec">
+         <h1>Hello, world!</h1>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+         <a {{action "openModel"}} class="btn-custom hvr-rectangle-out">Learn more <i class="fa fa-plus"></i></a>
+         <div class="clearfix"></div>
+      </div>
+   </div>
+</div>
+{{#if isShowingModal}}
+{{#modal-dialog onClose="closeModel" onClickOverlay="openModel"
+targetAttachment="center"
+translucentOverlay=true}}
+	<div class="row">
+		<div class="col-lg-12">
+			<h3> Learn More</h3>
+			<hr/>
+			<p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div >
+	</div>
+
+<hr/>
+<button {{action "closeModel"}} class="btn btn-default pull-right ">Close</button>
+{{/modal-dialog}}
+{{/if}}

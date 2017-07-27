@@ -1,0 +1,27 @@
+<!-- Services Section Starts Here -->
+<div class="padd bg-gray" id="services">
+   <div class="container">
+      <div class="row">
+         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+            <h1>Services</h1>
+            <div class="row">
+               <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                  <p class="sub-title">
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="row">
+         {{#each services as |service|}}
+         <div class="col-xs-12 col-sm-4 col-md-4 text-center service-item">
+            <img src="{{service.img}}" class="center-block" alt="" title="" />
+            <h4>{{service.name}}</h4>
+            <p>{{service.description}}</p>
+         </div>
+         {{/each}}
+      </div>
+   </div>
+</div>
+<!-- Services Section Ends Here -->

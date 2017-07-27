@@ -1,0 +1,50 @@
+<!-- Team Section Starts Here -->
+<div id="reviews" class="padd">
+   <div class="container">
+      <div class="container wrapper-h-xs-lg">
+         <div class="row section-title text-center">
+            <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+               <h1>Our Team</h1>
+               <div class="row">
+                  <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                     <p class="sub-title">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+               {{#each ourTeam as |member|}}
+               <div class="col-xs-12 col-sm-3 col-md-3 text-center member">
+                  <img src="{{member.img}}" class="img-responsive center-block" alt="" title="" />
+                  <h2 class="name">{{member.name}}</h2>
+                  <h4 class="role">{{member.designation}}</h4>
+                  <p>{{member.description}}</p>
+                  <span class="team-social-icon">
+                  <a href="{{member.fb}}"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+                  <a href="{{member.tw}}"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+                  <a href="{{member.li}}"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+                  </span>
+               </div>
+               {{/each}}
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- Team Section Ends Here -->
+<!-- Clients Section Starts Here -->
+<div class="brand">
+   <div class="container">
+      <div class="row text-center">
+         <div class="col-xs-12 col-sm-12 col-md-12">
+            {{#each ourClients as |client|}}
+            <div class="brand-item">
+               <a href="#"><img alt="01 brand" src="{{client.img}}"></a>
+            </div>
+            {{/each}}
+         </div>
+      </div>
+   </div>
+</div>
+<!-- Clients Section Ends Here -->
