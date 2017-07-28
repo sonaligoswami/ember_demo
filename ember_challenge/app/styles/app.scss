@@ -83,7 +83,7 @@ p{font-size: 14px; color: #7b7b7b;}
 .btn-secondary:focus,.btn-secondary:hover {background: #2da7af; border: 1px solid #2da7af; outline: none;}
 
 /* Navbar Custom CSS */
-.navbar-custom{width: 100%; border-radius: 0px; z-index: 999; padding: 10px 0px; position: fixed; top: 0px; left: 0px;}
+.navbar-custom{width: 100%; border-radius: 0px; z-index: 999; padding: 10px 0px; left: 0px;}
 .navbar-nav{margin: 0;}
 .navbar-custom .navbar-nav li a {color: #FFF; font-size: 14px; font-family: 'Lato', sans-serif; cursor:pointer;}
 .navbar-custom .navbar-nav li a:hover,.navbar-custom .navbar-nav li a:focus,.navbar-custom .navbar-nav li a:active {color: #FFF;}
@@ -106,6 +106,7 @@ p{font-size: 14px; color: #7b7b7b;}
 /* Services Section CSS */
 .service-item {padding: 0px 60px; margin-bottom: 50px;}
 .service-item p {color: #7b7b7b; line-height: 20px;}
+.service-icon {color: #5c1bb7;}
 
 /* Team Section CSS */
 .member{padding: 0px 30px;}

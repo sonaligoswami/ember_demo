@@ -7,32 +7,32 @@ export default Ember.Route.extend({
 			ourServices:[
 				{
 					"name":"Unique Layouts",
-					"img":"assets/img/lightbulb.png",
+					"img":"fa-lightbulb-o",
 					"description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
 				},
 				{
 					"name":"Responsive",
-					"img":"assets/img/responsive.png",
+					"img":"fa-mobile",
 					"description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
 				},
 				{
 					"name":"Ajax Transitions",
-					"img":"assets/img/ajax.png",
+					"img":"fa-spinner",
 					"description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
 				},
 				{
 					"name":"E-Commerce",
-					"img":"assets/img/e-commerce.png",
+					"img":"fa-shopping-bag",
 					"description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
 				},
 				{
 					"name":"Unlimited Portfolios",
-					"img":"assets/img/portfolio.png",
+					"img":"fa-th",
 					"description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
 				},
 				{
 					"name":"Powerful",
-					"img":"assets/img/power.png",
+					"img":"fa-bolt",
 					"description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
 				}
 			],

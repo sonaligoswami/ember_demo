@@ -16,7 +16,9 @@
       <div class="row">
          {{#each services as |service|}}
          <div class="col-xs-12 col-sm-4 col-md-4 text-center service-item">
-            <img src="{{service.img}}" class="center-block" alt="" title="" />
+            <span class="fa-stack fa-4x">
+               <i class="fa {{service.img}} fa-stack-1x service-icon"></i>
+            </span>
             <h4>{{service.name}}</h4>
             <p>{{service.description}}</p>
          </div>

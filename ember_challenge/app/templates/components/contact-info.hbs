@@ -18,28 +18,36 @@
             {{#if isShowContacForm}}
             <form {{action 'submit' on='submit'}}>
             <div class="form-group {{if errors.name 'has-error'}}">
-               {{input type="text" class="form-control custom-form" placeholder="Name" value=name}}
+               {{input type="text" class="form-control custom-form" placeholder="Name" value=name key-up="checkValidation"}}
+              {{#if viewErrors}}
                {{#each errors.name as |error|}}
                <span class="help-block">{{error.message}}</span>
                {{/each}}
+               {{/if}}
             </div>
             <div class="form-group {{if errors.email 'has-error'}}">
-               {{input type="text" class="form-control custom-form" placeholder="Email" value=email}}
+               {{input type="text" class="form-control custom-form" placeholder="Email" value=email key-up="checkValidation"}}
+               {{#if viewErrors}}
                {{#each errors.email as |error|}}
                <span class="help-block">{{error.message}}</span>
                {{/each}}
+               {{/if}}
             </div>
             <div class="form-group {{if errors.subject 'has-error'}}">
-               {{input type="text" class="form-control custom-form" placeholder="Subject" value=subject}}
+               {{input type="text" class="form-control custom-form" placeholder="Subject" value=subject key-up="checkValidation"}}
+               {{#if viewErrors}}
                {{#each errors.subject as |error|}}
                <span class="help-block">{{error.message}}</span>
                {{/each}}
+               {{/if}}
             </div>
             <div class="form-group {{if errors.message 'has-error'}}">
-               {{textarea type="text" class="form-control custom-form" rows="3" placeholder="Message" value=message}}
+               {{textarea type="text" class="form-control custom-form" rows="3" placeholder="Message" value=message key-up="checkValidation"}}
+               {{#if viewErrors}}
                {{#each errors.message as |error|}}
                <span class="help-block">{{error.message}}</span>
                {{/each}}
+               {{/if}}
             </div>
             <button type="submit" class="btn btn-default btn-form hidden-xs">Submit</button>
             <div class="text-center">
