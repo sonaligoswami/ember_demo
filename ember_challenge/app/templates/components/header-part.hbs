@@ -35,31 +35,21 @@
 {{#modal-dialog onClose="closeModel" onClickOverlay="openModel"
 targetAttachment="center"
 translucentOverlay=true}}
-<div class="clearfix">
-   <div class="row">
-      <div class="col-md-12 col-sm-12 col-xs-12">
-         <h2>Packages </h2>
-         <hr/>
-      </div>
-   </div>
-</div>
-<div class="row">
-  {{#each packages as |package|}}
-    <div class="col-lg-4 col-sm-12 col-md-12 col-xs-12">
-      <div class=" pricing-circle">
-         <div class="pricing-inner-circle">
-            <h2>{{package.name}}</h2>
-            <h4>&#36;{{package.price}}</h4>
-            <p>{{package.description}}</p>
-            <button type='button' class="btn btn-warning ">Buy</button>
-            <hr/>
-         </div>
-      </div>
+<button {{action "closeModel"}} class="close-btn">X</button>
+<h2 style="text-align:center">Packages</h2>
+
+<div class="popup-box">
+{{#each packages as |package|}}
+   <div class="columns">
+      <ul class="price">
+         <li class="header">{{package.name}}</li>
+         <li class="grey">&#36; {{package.price}} / year</li>
+         <li>{{package.description}}</li>
+         <li class="grey"><a href="#" class="btn btn-warning">Buy</a></li>
+      </ul>
    </div>
   {{/each}}
-   
 </div>
-<hr/>
-<button {{action "closeModel"}} class="btn btn-default pull-right">Close</button>
+
 {{/modal-dialog}}
 {{/if}}

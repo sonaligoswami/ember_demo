@@ -2,18 +2,21 @@
 <div id="about" class="padd">
    <div class="container">
       <div class="row">
-         <div class="col-xs-12 col-sm-6 col-md-6 text-center hidden-md hidden-sm hidden-lg">
+         <div class="col-xs-12 col-sm-6 col-md-5 text-center hidden-md hidden-sm hidden-lg">
             <h1 class="">Redefining the web</h1>
          </div>
-         <div class="col-xs-12 col-sm-6 col-md-6">
+         <div class="col-xs-4 col-xs-offset-4 col-sm-6 col-sm-offset-0 col-md-5 padding-0">
             <img src="/assets/img/layers.png" class="img-responsive center-block" alt="" title=""/>  
          </div>
-         <div class="col-xs-12 col-sm-6 col-md-6">
+         <div class="col-xs-12 col-sm-6 col-md-7">
             <h1 class="hidden-xs">Redefining the web</h1>
             <p class="redefine-text">
-               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer scelerisque placerat lorem, eu feugiat leo. Nam non viverra quam. Nulla sollicitudin neque a urna dapibus interdum. Proin placerat porta ante sed molestie. Proin lobortis pellentesque ante.
+               </p>     
+            <p class="redefine-text">     
+               Maecenas scelerisque, est id congue lobortis, leo diam dapibus libero, sed eleifend leo massa luctus sem. Interdum et malesuada fames ac ante ipsum primis in faucibus.
             </p>
-            <a {{action "openModel"}} class="btn btn-rnd margin-top-20 hidden-xs">Learn more</a>
+            <a {{action "openModel"}} class="btn btn-rnd margintop-12 hidden-xs">Learn more</a>
             <div class="hidden-sm hidden-md hidden-lg text-center"><a {{action "openModel"}} class="btn btn-rnd margin-top-20">Learn more</a></div>
          </div>
       </div>
@@ -33,6 +36,6 @@ translucentOverlay=true}}
    </div>
 
 <hr/>
-<button {{action "closeModel"}} class="btn btn-default pull-right">Close</button>
+<button {{action "closeModel"}} class="close-btn">X</button>
 {{/modal-dialog}}
 {{/if}}
